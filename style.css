@@ -34,6 +34,7 @@ body {
   border-top-right-radius: 50%;
   border-bottom-right-radius: 42%;
   border-bottom-left-radius: 44%;
+  position: relative;
 }
 
 .head::before, .head::after {
@@ -43,17 +44,34 @@ body {
   background-color: darkblue;
   position: absolute;
   transform: rotate(12deg);
-  left: 29%;
-  top: 19%;
+  left: 3%;
+  top: -7%;
   border-top-left-radius: 11%;
   border-top-right-radius: 49%;
   border-bottom-left-radius: 44%;
 }
 
 .head::after{
-  left: 58%;
+  left: 69%;
   transform: rotate(75deg);
 }
+
+.lip {
+  position: absolute;
+  width: 20px;
+  height: 8px;
+  background-color: white;
+  bottom: 33px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border-bottom-left-radius: 300px;
+  border-bottom-right-radius: 300px;
+  opacity: 0;
+  animation: lip ease-in 2s;
+}
+
+
 
 .body{
   background-color: darkblue;
@@ -89,3 +107,16 @@ body {
   transform: rotate(45deg);
 }
 
+@keyframes lip {
+  from {
+    opacity:0;
+  }
+
+  50% {
+    opacity:1;
+  }
+
+  to {
+    opacity:0;
+  }
+}
