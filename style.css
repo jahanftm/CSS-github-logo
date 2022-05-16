@@ -56,7 +56,7 @@ body {
   transform: rotate(75deg);
 }
 
-.lip {
+.lib {
   position: absolute;
   width: 20px;
   height: 8px;
@@ -72,6 +72,20 @@ body {
 }
 
 
+.lib::before, .lib::after{
+  content: '';
+  width: 13px;
+  height: 26px;
+  border-radius: 100%;
+  background-color: white;
+  position: absolute;
+  top: -49px;
+  left: -17px;
+}
+
+.lib::after{
+  left: 25px;
+}
 
 .body{
   background-color: darkblue;
